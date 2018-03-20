@@ -32,6 +32,9 @@ dependencies {
     // needed by swagger
     implementation "javax.xml.bind:jaxb-api:2.2.4"
 
+    // connect to the Netflix Eureka Discovery Server
+    implementation "org.springframework.cloud:spring-cloud-starter-netflix-eureka-client"
+
     // Use test frameworks
     testImplementation "org.springframework.boot:spring-boot-starter-test"
 }

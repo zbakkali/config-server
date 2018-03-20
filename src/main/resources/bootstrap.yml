@@ -1,2 +1,9 @@
 server.port: 8888
-spring.cloud.config.server.git.uri: https://github.com/zbakkali/config
+spring:
+  application.name: config-server
+  cloud.config.server.git.uri: https://github.com/zbakkali/config
+eureka:
+  instance:
+        statusPageUrlPath: /actuator/info
+        healthCheckUrlPath: /actuator/health
+  client.serviceUrl.defaultZone: http://localhost:8761/eureka/
